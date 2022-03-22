@@ -12,6 +12,8 @@ struct VideosAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(VideoModel())
+                .preferredColorScheme(.light)
         }
     }
 }
